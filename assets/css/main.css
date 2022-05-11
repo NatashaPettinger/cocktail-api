@@ -743,14 +743,13 @@ button,
   padding: 0 1.125em;
   text-align: center;
   text-decoration: none;
-  white-space: nowrap; 
-  width: 330px}
+  white-space: nowrap; }
   input[type="submit"]:hover,
   input[type="reset"]:hover,
   input[type="button"]:hover,
   button:hover,
   .button:hover {
-    background-color: #6c7917; }
+    background-color: #1fcaa7; }
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
@@ -798,7 +797,7 @@ button,
     margin: 0 0 1em 0; } }
 
 /* Signup Form */
-#search-form {
+#search-form { search-form
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -887,34 +886,27 @@ button,
       margin: 1em 0 0 0;
       position: relative; } } */
 
-/* Board */
-#newBoard {
+/* Search Results */
+ul #searchResults{
   display: flex;
-  justify-content: center;
-  width: 330px;
-  height: 330px;
-  border-radius: 6px;
+  flex-flow: column wrap;
+  width: auto;
+ 
 }
-  .row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 330px;
-      height: 330px;
-  }
-    .box {
-      justify-content: center;
-      width: 106px;
-      height: 106px;
-      background-color: #97a920;
-      /* border: 1px solid #199e83; */
-      border-radius: 6px;
-      margin: 2px;
-      font-size: 50px;
-      line-height: 106px;
-      text-align: center;
-    }
-    .box:hover {
-      background-color: #6c7917;
-      cursor: pointer;
-    }
+
+.wide {
+  margin-left: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.reveal {
+  display: inherit;
+}
+
+img{
+  max-height: 50vh;
+  justify-self: center;
+}
